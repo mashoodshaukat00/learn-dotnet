@@ -20,11 +20,12 @@ namespace OopConcepts.ConsoleApp
             // Polymorphisim
             // Inheritance
             // scope of field, class, namespace
+            // datatype, loops, conditions, switches, assignments, construction, destruction, libraries, their usage, their documentation,
+            
+            // how to write documentation in .net project files.
             // .net app entry points
             // project types in .net 
             // general syntax
-            // datatype, loops, conditions, switches, assignments, construction, destruction, libraries, their usage, their documentation,
-            // how to write documentation in .net project files.
 
             var myOtherBaby = new Human(); // object mutation, object copy, deep copy, shallow copy, copy by reference, copy by value
             myOtherBaby = baby;
