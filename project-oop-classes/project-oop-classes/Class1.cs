@@ -22,6 +22,8 @@ namespace project_oop_classes
             this.Price = price;
             this.Image = image;
         }
+
     }
+
    
 }
