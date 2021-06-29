@@ -6,13 +6,12 @@ namespace Exercise.AddAndMultiply.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine($"By adding first two numbers and multiplying by third, Result: {AddAndMultiply(2,3,6)}");
         }
                 
-        public int AddAndMultiply(int a, int b, int c)
+        public static int AddAndMultiply(int AddNum1, int AddNum2, int MultiplyNum3)
         {
-            int d = (a + b) * c;
-            return d;
+            return (AddNum1 + AddNum2) * MultiplyNum3;            
         }
 
     }

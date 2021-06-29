@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi", "BasicWebApi\BasicWebApi.csproj", "{47C64631-3D49-495F-8153-2FD590C010AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi", "BasicWebApi\BasicWebApi.csproj", "{47C64631-3D49-495F-8153-2FD590C010AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicWebApi.Test", "BasicWebApi.Test\BasicWebApi.Test.csproj", "{95F56CD9-50A8-4DC7-9937-D9EC9905039F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicWebApi.Test", "BasicWebApi.Test\BasicWebApi.Test.csproj", "{95F56CD9-50A8-4DC7-9937-D9EC9905039F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EF539D9C-1E2E-4767-8A13-69AB413829C5}"
+	ProjectSection(SolutionItems) = preProject
+		Sprinit.md = Sprinit.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +20,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{47C64631-3D49-495F-8153-2FD590C010AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +46,11 @@ Global
 		{95F56CD9-50A8-4DC7-9937-D9EC9905039F}.Release|x64.Build.0 = Release|Any CPU
 		{95F56CD9-50A8-4DC7-9937-D9EC9905039F}.Release|x86.ActiveCfg = Release|Any CPU
 		{95F56CD9-50A8-4DC7-9937-D9EC9905039F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46BF8483-57C2-4D71-AF46-611B7969DB02}
 	EndGlobalSection
 EndGlobal

@@ -6,8 +6,8 @@ namespace Excercise.NumberContainsADigit.ConsoleApp
     {        
         static void Main(string[] args)
         {
-            int number = 7201432;
-            int secondNumber = 87501;
+           int number = 7201432;
+           int secondNumber = 87501;
 
             Console.WriteLine($"{number} contains digit 3 : {IfNumberContains3(number)}");
             Console.WriteLine($"{secondNumber} contains digit 3 : {IfNumberContains3(secondNumber)}");
@@ -15,20 +15,18 @@ namespace Excercise.NumberContainsADigit.ConsoleApp
 
         public static bool IfNumberContains3(int number)
         {
-            bool result = false;
+            {
+                while (number > 0)
+                {
+                    if (number % 10 == 3)
+                    {
+                        return true;
+                    }
 
-            // Implement your logic here.
-            return result;
-        }
-
-        /*
-         *  Write a method that checks if given number (positive integer) contains digit 3.
-         *  Do not convert number to other type. Do not use built-in functions like `Contains(), StartsWith()`, etc.
-
-            Expected input and output
-            
-                IfNumberContains3(7201432) → true
-                IfNumberContains3(87501) → false
-         */
+                    number /= 10;
+                }
+                return false;                         
+            }
+        }        
     }
 }
