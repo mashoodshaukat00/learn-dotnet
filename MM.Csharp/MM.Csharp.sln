@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld.ConsoleApp", "He
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OopConcepts.ConsoleApp", "OopConcepts.ConsoleApp\OopConcepts.ConsoleApp.csproj", "{880F798C-C711-4215-BD7E-BFFD3CF94FFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlassPaper.Exercise.ClassLibrary", "GlassPaper.Exercise\GlassPaper.Exercise.ClassLibrary.csproj", "{2F2EB00D-E6B1-4E40-B13F-3FCF82E27B01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlassPaper.Exercise.ClassLibrary", "GlassPaper.Exercise\GlassPaper.Exercise.ClassLibrary.csproj", "{2F2EB00D-E6B1-4E40-B13F-3FCF82E27B01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlassPaper.Exercise.ConsoleApp", "GlassPaper.Exercise.ConsoleApp\GlassPaper.Exercise.ConsoleApp.csproj", "{3520046F-73FA-4612-94DA-B9CA7DDE1FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GlassPaper.Exercise.ConsoleApp", "GlassPaper.Exercise.ConsoleApp\GlassPaper.Exercise.ConsoleApp.csproj", "{3520046F-73FA-4612-94DA-B9CA7DDE1FCD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excercise.NumberContainsADigit.ConsoleApp", "Excercise.NumberContainsADigit.ConsoleApp\Excercise.NumberContainsADigit.ConsoleApp.csproj", "{8DD71D9D-03D2-4DE8-B3A9-F88A90962825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excercise.NumberContainsADigit.ConsoleApp", "Excercise.NumberContainsADigit.ConsoleApp\Excercise.NumberContainsADigit.ConsoleApp.csproj", "{8DD71D9D-03D2-4DE8-B3A9-F88A90962825}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise.AddAndMultiply.ConsoleApp", "Exercise.AddAndMultiply.ConsoleApp\Exercise.AddAndMultiply.ConsoleApp.csproj", "{94329E80-56E9-47AD-86BF-25AA05063E2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{8DD71D9D-03D2-4DE8-B3A9-F88A90962825}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DD71D9D-03D2-4DE8-B3A9-F88A90962825}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DD71D9D-03D2-4DE8-B3A9-F88A90962825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94329E80-56E9-47AD-86BF-25AA05063E2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94329E80-56E9-47AD-86BF-25AA05063E2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94329E80-56E9-47AD-86BF-25AA05063E2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94329E80-56E9-47AD-86BF-25AA05063E2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
