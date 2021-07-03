@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.AddAndMultiply.Con
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.CheckLeafYear.ConsoleApp", "Exercise.CheckLeafYear.ConsoleApp\Exercise.CheckLeafYear.ConsoleApp.csproj", "{369CA575-B7AD-46D8-83E6-97F0E7784689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise.IsPalindrome.ConsoleApp", "Exercise.IsPalindrome.ConsoleApp\Exercise.IsPalindrome.ConsoleApp.csproj", "{1462F48E-FD98-45DF-A728-E0B62C0B0104}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.IsPalindrome.ConsoleApp", "Exercise.IsPalindrome.ConsoleApp\Exercise.IsPalindrome.ConsoleApp.csproj", "{1462F48E-FD98-45DF-A728-E0B62C0B0104}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise.Vue.WebApp", "Exercise.Vue.WebApp\Exercise.Vue.WebApp.csproj", "{29BEB2D6-8350-4099-9574-6BED1844BC3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{1462F48E-FD98-45DF-A728-E0B62C0B0104}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1462F48E-FD98-45DF-A728-E0B62C0B0104}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1462F48E-FD98-45DF-A728-E0B62C0B0104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29BEB2D6-8350-4099-9574-6BED1844BC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29BEB2D6-8350-4099-9574-6BED1844BC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29BEB2D6-8350-4099-9574-6BED1844BC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29BEB2D6-8350-4099-9574-6BED1844BC3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
