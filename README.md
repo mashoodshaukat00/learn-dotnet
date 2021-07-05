@@ -65,7 +65,8 @@ Useful Links :
    Expected input and output
    
    ```csharp
-   sResultTheSame(2+2, 2*2) → true IsResultTheSame(9/3, 16-1) → false
+   IsResultTheSame(2+2, 2*2) → true 
+   IsResultTheSame(9/3, 16-1) → false
    ```
    
 8. Given three integers, write a method that returns first number divided modulo by second one and these divided modulo by third one.
@@ -101,7 +102,8 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   AbsoluteValue(6832) → 6832 AbsoluteValue(-392) → 392
+   AbsoluteValue(6832) → 6832 
+   AbsoluteValue(-392) → 392
    ```
 
 2. Given two integers, write a method that returns their multiplication if they are both divisible by 2 or 3, otherwise returns thier sum.
@@ -119,7 +121,9 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   IfConsistsOfUppercaseLetters("xyz") → false IfConsistsOfUppercaseLetters("DOG") → true IfConsistsOfUppercaseLetters("L9#") → false
+   IfConsistsOfUppercaseLetters("xyz") → false 
+   IfConsistsOfUppercaseLetters("DOG") → true 
+   IfConsistsOfUppercaseLetters("L9#") → false
    ```
 
 4. Given an array of 3 integers, write a method that checks if multiplication or sum of two first numbers is greater than third one.
@@ -127,7 +131,8 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   IfGreaterThanThirdOne([2, 7, 12]) → true IfGreaterThanThirdOne([-5, -8, 50]) → false
+   IfGreaterThanThirdOne([2, 7, 12]) → true 
+   IfGreaterThanThirdOne([-5, -8, 50]) → false
    ```
 
 5. Given an integer, write a method that checks if it is even.
@@ -135,7 +140,8 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   IfNumberIsEven(721) → false IfNumberIsEven(1248) → true
+   IfNumberIsEven(721) → false
+   IfNumberIsEven(1248) → true
    ```
 
 6. Given an array of three integers, write a method that checks if they are sorted in ascending order.
@@ -143,7 +149,8 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   IfSortedAscending([3, 7, 10])→ true IfSortedAscending([74, 62, 99])→ false
+   IfSortedAscending([3, 7, 10])→ true 
+   IfSortedAscending([74, 62, 99])→ false
    ```
 
 7. Given three letter long string, write a method that checks if at least one neighbour of middle letter is its neighbour in the alphabet.
@@ -151,7 +158,8 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   IsLonelyIsland("XYZ") → True IsLonelyIsland("GWK") → False
+   IsLonelyIsland("XYZ") → True
+   IsLonelyIsland("GWK") → False
    ```
 
 8. Given a number, write a method that checks if it is positive, negative or zero.
@@ -159,7 +167,9 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   PositiveNegativeOrZero(5.24) → positive PositiveNegativeOrZero(0.0) → zero PositiveNegativeOrZero(-994.53) → negative
+   PositiveNegativeOrZero(5.24) → positive 
+   PositiveNegativeOrZero(0.0) → zero 
+   PositiveNegativeOrZero(-994.53) → negative
    ```
 
 ## Loops :
@@ -196,7 +206,8 @@ Useful Links :
    Expected input and output
 
    ```csharp
-   FractionsSum(3) → 1.36111111111111 FractionsSum(5) → 1.46361111111111
+   FractionsSum(3) → 1.36111111111111 
+   FractionsSum(5) → 1.46361111111111
    ```
 
 3. #### Sort array ascending
