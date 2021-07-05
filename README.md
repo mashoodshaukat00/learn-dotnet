@@ -4,6 +4,8 @@ Useful Links :
 
 - [ ] https://codeasy.net/course/csharp_beginner
 
+  
+
 
 ## **Basic Exercises :** 
 
@@ -358,7 +360,7 @@ Expected output :
 
     Expected input and output
 
-    ```
+    ```csharp
     FullSequenceOfLetters("ds") → "defghijklmnopqrs" 
     
     FullSequenceOfLetters("or") → "opqr"
@@ -370,7 +372,7 @@ Expected output :
 
     Expected input and output
 
-    ```
+    ```csharp
     BitsToNumber("1") → 1
     
     BitsToNumber("100010") → 34
@@ -382,19 +384,18 @@ Expected output :
 
     Expected input and output
 
-    ```
+    ```csharp
     DigitsSum(5434) → 16 
-    
     DigitsSum(904861) → 28
     ```
-
+    
 16. #### Sum and average
 
     Given two integers n and m (n <= m), write a method that returns sum of all integers and average from range [n, m].
 
     Expected input and output
 
-    ```
+    ```csharp
     SumAndAverage(11, 66) → "Sum: 2156, Average: 38.5" 
     
     SumAndAverage(-10, 0) → "Sum: -55, Average: -5"
@@ -406,7 +407,7 @@ Expected output :
 
     Expected input and output
 
-    ```
+    ```csharp
     SumDoubleOnly(["abc", 5.6, 14, 'c', true, 'x', false, 567, 2.22]) → 7.82
     ```
 
@@ -441,7 +442,7 @@ Expected output :
 
     Expected input and output
 
-    ```
+    ```csharp
     ToThePowerOf(-2, 3) → -8
     
     ToThePowerOf(5, 5) → 3125
@@ -453,7 +454,7 @@ Expected output :
 
     Expected input and output
 
-    ```
+    ```csharp
     LettersBalance("fgvgvf") → true
     
     LettersBalance("lampsmpser") → false
@@ -479,7 +480,7 @@ Expected output :
 
     Expected input and output
 
-    ```
+    ```csharp
     DigitalRoot(83) → 2 
     
     DigitalRoot(40002938) → 8
