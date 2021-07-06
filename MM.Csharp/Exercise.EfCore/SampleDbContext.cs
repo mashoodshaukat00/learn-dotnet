@@ -6,6 +6,8 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace Exercise.EfCore.Models
 {
+    using Microsoft.Extensions.Options;
+
     public partial class SampleDbContext : DbContext
     {
         public SampleDbContext()
@@ -46,6 +48,23 @@ namespace Exercise.EfCore.Models
                     .HasMaxLength(50);
             });
 
+            modelBuilder.Entity<Category>()
+                .HasData(
+                    new Category
+                    {
+                        Id = 1,
+                        Name = "Clothing",
+                        Description = "Articles defined in clothing type of merchandise.",
+                        IsEnabled = true
+                    },
+                    new Category
+                    {
+                        Id = 2,
+                        Name = "Watches",
+                        Description = "Articles defined in clothing type of merchandise.",
+                        IsEnabled = true
+                    });
+
             modelBuilder.Entity<Product>(entity =>
             {
                 entity.ToTable("Product");
@@ -70,6 +89,22 @@ namespace Exercise.EfCore.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Product_Category");
             });
+
+
+            modelBuilder.Entity<Product>()
+                .HasData(
+                    new Product()
+                    {
+                        Id = 1,
+                        Name = "T-Shirt",
+                        CategoryId = 1,
+                        Title = "West Minister Tee",
+                        Description = "Round neck regular fit t-shirt",
+                        ImageUrl = "Google.com",
+                        Price = 24.02M,
+                        StockQuantity = 100
+
+                    });
 
             OnModelCreatingPartial(modelBuilder);
         }
