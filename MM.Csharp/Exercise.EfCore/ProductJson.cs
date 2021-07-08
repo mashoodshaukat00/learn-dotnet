@@ -20,7 +20,7 @@ namespace Exercise.EfCore.Models
         internal static List<Product> GenerateProducts()
         {
 
-            var data = JsonConvert.DeserializeObject<List<ProductJson>>(File.ReadAllText(@"D:\Repo-Private\learn-dotnet\MM.Csharp\Exercise.EfCore\product-data.json"));
+            var data = JsonConvert.DeserializeObject<List<ProductJson>>(File.ReadAllText(@"D:\Documentation\Nav IT Kurs\Utvikling\learn-dotnet\MM.Csharp\Exercise.EfCore\product-data.json"));
             var products = new List<Product>();
 
             var counter = 1;

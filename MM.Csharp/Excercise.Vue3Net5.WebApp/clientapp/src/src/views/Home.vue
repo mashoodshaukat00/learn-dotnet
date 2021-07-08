@@ -1,15 +1,14 @@
 <template>
   <section>
     <nav class="nav">
-
-        <h2 class="nav__header">
+      <h2 class="nav__header">
         Products
       </h2>
       <div class="nav__cart">
-        <button @click="showCart = !showCart"
-        @dblclick="openCart"
-        >
-          <i class="fas fa-shopping-cart"></i>
+        <button @click="showCart = !showCart">
+          <i class="fas fa-shopping-cart">
+            Open Cart
+          </i>
         </button>
         <span class="total-quantity">{{ totalQuantity }}</span>
         <div
@@ -26,8 +25,6 @@
           </ul>
         </div>
       </div>
-
-
     </nav>
     <Products
       :products="products"
@@ -92,15 +89,6 @@ export default {
         }
       }
     },
-    async openCart(){
-      this.$router.push({
-        name:'Cart',
-       params: {cartdata: JSON.stringify(
-         this.products.filter(product => product.quantity > 0)
-       )
-
-       }})
-    },
     async subtractFromCart (id) {
         console.log(id)
         for (let i = 0; i < this.products.length; i++) {
@@ -114,8 +102,7 @@ export default {
         async fetchProducts()
         {
          // const res= await fetch('https://random-data-api.com/api/coffee/random_coffee?size=6');
-         //https://fakestoreapi.com/products/          
-          const res = await fetch('https://localhost:44368/api/Products')
+         const res = await fetch('https://fakestoreapi.com/products/')
           const data = await res.json();
           return data;
         },
