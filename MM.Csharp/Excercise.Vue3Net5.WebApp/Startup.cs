@@ -16,6 +16,8 @@ namespace Exercise.Vue3Net5.WebApp
 
     public class Startup
     {
+        private readonly string MyAllowedOrigins = "_myAllowedOrigins";
+
         public Startup(IConfiguration configuration)
         {
             this.Configuration = configuration;
@@ -26,15 +28,23 @@ namespace Exercise.Vue3Net5.WebApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddCors(o => o.AddPolicy(MyAllowedOrigins, ApplicationBuilder =>
+            {
+                //ApplicationBuilder.WithOrigins("*");
+                ApplicationBuilder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader();
+            }));
+
             var connectionString = this.Configuration.GetConnectionString("DbConnection");
 
             services.AddDbContext<SampleDbContext>(options => options.UseSqlServer(connectionString));
-            // services.AddTransient<SampleDbContext>(provider => provider.GetService<SampleDbContext>());
-
             services.AddTransient<ProductService>();
 
             services.AddControllers();
-            
+
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp";
@@ -60,7 +70,7 @@ namespace Exercise.Vue3Net5.WebApp
 
             app.UseRouting();
             app.UseSpaStaticFiles();
-
+            app.UseCors(MyAllowedOrigins);
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -69,17 +79,17 @@ namespace Exercise.Vue3Net5.WebApp
             });
 
             app.UseSpa(spa =>
+            {
+                if (env.IsDevelopment())
                 {
-                    if (env.IsDevelopment())
-                    {
-                        spa.Options.SourcePath = "ClientApp/";
-                        spa.UseVueCli(npmScript: "serve --fix");
-                    }
-                    else
-                    {
-                        spa.Options.SourcePath = "dist";
-                    }
-                });
+                    spa.Options.SourcePath = "ClientApp/";
+                    spa.UseVueCli(npmScript: "serve --fix");
+                }
+                else
+                {
+                    spa.Options.SourcePath = "dist";
+                }
+            });
         }
     }
 }
